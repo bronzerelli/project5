@@ -1,0 +1,36 @@
+* {
+box-sizing: border-box;
+}
+
+body {
+	text-align: center;
+    @extend %marpad;
+    @include desk {
+        background: $wideback;
+    }
+    p {
+	@extend %para;
+    }
+    h1, h2 {
+	@extend %titles;
+    }
+}
+
+img {
+	width: 92.5%;
+	margin:0;
+}
+ 
+#wrapper{
+@include desk {
+		max-width:1025px;
+		margin: auto;
+		padding:1em;
+		background: $backcolor;
+    }
+}
+.main-content {
+    @include desk {
+        background: $wideback;
+    }
+}

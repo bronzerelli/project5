@@ -1,0 +1,86 @@
+/*Footer*/
+
+footer {
+	background: $backcolor;
+	margin: 0;
+	padding-top: .75em;
+	padding-bottom: .75em;
+    hr {
+	width: 95%;
+	margin: auto;
+    }
+    h2  {
+	@extend %marpad;
+    }
+    ul {
+	@extend %marpad;
+    }
+    li {
+	font-family : $titlefont;
+	font-size: 1.5em;
+    @extend %links;
+    }
+    a {
+	@extend %links;
+    }
+}
+
+footer li a {
+	text-decoration: none;
+	color: $acolor;
+    &:hover{
+	color: $hov;
+    }
+}
+
+
+#sn{
+    @extend %sn;
+    float: left;
+ 	padding-left: 5%;
+}
+
+#sn a {
+	 @extend %sn;
+    &:hover {
+   color: $hov;
+    }
+}
+ 
+ #btt {
+ 	float: right;
+ 	padding-right:1em;
+     @include tablet {
+        display: none;
+    }
+ }
+
+#foot-content{
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+@include tablet{
+    #footer-nav {
+	float:right;
+	padding-right: 5%;
+    li{
+	padding-left: 1em;
+        }
+    }
+}
+
+#address{
+	margin: 0;
+	padding-bottom: 1em;
+    li {
+	display: block;
+    }
+}
+
+.hide {
+	display:none;
+    @include tablet {
+        display: inline;
+    }
+}
