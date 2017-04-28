@@ -3,80 +3,9 @@ $licolor: #C9C9C9;
 $titlefont: 'VT323', monospace; 
 $parafont: 'Play', sans-serif;
 $visit: steelblue;
-$hov: grey;
+$hoved: grey;
 $acolor: black;
 $wideback: white;
 $tabl: 768px;
 $deskt: 1024px;
-
-%marpad {
-    margin: 0;
-    padding: 0;
-}
-
-%para {
-    font-family: $parafont;
-	margin-top: 0;
-	margin-bottom: 1em;
-	padding-top: 0;
-	padding-bottom: 1em;
-}
-
-%titles {
-    font-family: $titlefont;
-	font-size: 3.25em;
-    font-weight: bold;
-	margin: 0 0 .2em 0;
-	padding-top: 0;
-}
-
-%sn {
-    font-family :$titlefont;
-	font-size: 1.25em;
-    font-weight: normal;
-    color: $acolor;
-	padding: 0;
-	margin: 0;
-	list-style-type : none;
-	text-decoration: none;
-}
-
-%links {
-    margin-bottom: 0;
-	padding-bottom: 0;
-	margin-top: 0;
-	padding-top: 0;
-	display: inline-block;
-}
-
-%pics {
-    float: right;
-		width: 33%;
-		padding: 1em;
-		padding-left: 0;
-		margin-top: 0;
-		margin-bottom: .25em;
-		margin-left:0;
-}
-
-%para2 {
-        text-align: left;
-		float:left;
-		width: 65%;
-		margin: 0;
-		margin-top: 1em;
-		padding-left: 2%;
-}
-
-@mixin tablet {
-  @media (min-width: #{$tabl}) {
-    @content;
-  }
-}
-
-@mixin desk {
-  @media (min-width: #{$deskt}) {
-    @content;
-  }
-}
 

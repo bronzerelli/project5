@@ -16,8 +16,7 @@ footer {
 	@extend %marpad;
     }
     li {
-	font-family : $titlefont;
-	font-size: 1.5em;
+	@include fontmix;
     @extend %links;
     }
     a {
@@ -29,21 +28,25 @@ footer li a {
 	text-decoration: none;
 	color: $acolor;
     &:hover{
-	color: $hov;
+	@include hov;
     }
 }
 
 
 #sn{
     @extend %sn;
+    @include fontmix;
     float: left;
  	padding-left: 5%;
 }
 
 #sn a {
 	 @extend %sn;
+    &:visited {
+        color: $visit;
+    }
     &:hover {
-   color: $hov;
+   @include hov;
     }
 }
  
@@ -60,15 +63,15 @@ footer li a {
 	margin-right: 15px;
 }
 
+#footer-nav{
 @include tablet{
-    #footer-nav {
 	float:right;
 	padding-right: 5%;
     li{
 	padding-left: 1em;
         }
     }
-}
+    }
 
 #address{
 	margin: 0;
@@ -81,6 +84,6 @@ footer li a {
 .hide {
 	display:none;
     @include tablet {
-        display: inline;
+        display: inline; 
     }
 }
