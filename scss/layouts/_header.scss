@@ -95,7 +95,7 @@ header{
    color: $visit;
     }
     &:hover {
-    @include hov;
+    @include hov($hoved, bold, 1.5em);
     }
 }
 

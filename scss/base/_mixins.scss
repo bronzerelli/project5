@@ -1,7 +1,7 @@
-@mixin hov {
-    color: $hoved;
-    font-weight: bold;
-    font-size: 1.5em;
+@mixin hov($hocolor, $fw, $fsize) {
+    color: $hocolor;
+    font-weight: $fw;
+    font-size: $fsize;
 }
 
 @mixin fontmix {
